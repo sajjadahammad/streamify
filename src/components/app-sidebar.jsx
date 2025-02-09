@@ -54,12 +54,12 @@ const data = {
   projects: [
     {
       name: "Dashboard",
-      url: "#",
+      url: "/",
       icon: Frame,
     },
     {
       name: "Top Artist",
-      url: "#",
+      url: "/top-artists",
       icon: PieChart,
     },
     {

@@ -3,18 +3,18 @@
       "total": 250000,
       "active": 180000,
       "growthData": [
-        { "month": "2024-02", "totalUsers": 250000, "activeUsers": 180000, "newUsers": 5000, "churnRate": 2.1 },
-        { "month": "2024-01", "totalUsers": 245000, "activeUsers": 175000, "newUsers": 5000, "churnRate": 2.3 },
-        { "month": "2023-12", "totalUsers": 240000, "activeUsers": 172000, "newUsers": 5000, "churnRate": 2.2 },
-        { "month": "2023-11", "totalUsers": 235000, "activeUsers": 168000, "newUsers": 5000, "churnRate": 2.4 },
-        { "month": "2023-10", "totalUsers": 230000, "activeUsers": 165000, "newUsers": 5000, "churnRate": 2.5 },
+        { "month": "2024-02", "totalUsers": 1150000, "activeUsers": 180000, "newUsers": 5000, "churnRate": 2.1 },
+        { "month": "2024-01", "totalUsers": 1645000, "activeUsers": 175000, "newUsers": 5000, "churnRate": 2.3 },
+        { "month": "2023-12", "totalUsers": 1240000, "activeUsers": 172000, "newUsers": 5000, "churnRate": 2.2 },
+        { "month": "2023-11", "totalUsers": 1435000, "activeUsers": 168000, "newUsers": 5000, "churnRate": 2.4 },
+        { "month": "2023-10", "totalUsers": 1200000, "activeUsers": 165000, "newUsers": 5000, "churnRate": 2.5 },
         { "month": "2023-09", "totalUsers": 225000, "activeUsers": 160000, "newUsers": 5000, "churnRate": 2.6 },
         { "month": "2023-08", "totalUsers": 220000, "activeUsers": 155000, "newUsers": 5000, "churnRate": 2.7 },
-        { "month": "2023-07", "totalUsers": 215000, "activeUsers": 150000, "newUsers": 5000, "churnRate": 2.8 },
-        { "month": "2023-06", "totalUsers": 210000, "activeUsers": 145000, "newUsers": 5000, "churnRate": 2.9 },
+        { "month": "2023-07", "totalUsers": 3215000, "activeUsers": 150000, "newUsers": 5000, "churnRate": 2.8 },
+        { "month": "2023-06", "totalUsers": 2210000, "activeUsers": 145000, "newUsers": 5000, "churnRate": 2.9 },
         { "month": "2023-05", "totalUsers": 205000, "activeUsers": 140000, "newUsers": 5000, "churnRate": 3.0 },
         { "month": "2023-04", "totalUsers": 200000, "activeUsers": 135000, "newUsers": 5000, "churnRate": 3.1 },
-        { "month": "2023-03", "totalUsers": 195000, "activeUsers": 130000, "newUsers": 5000, "churnRate": 3.2 }
+        { "month": "2023-03", "totalUsers": 1195000, "activeUsers": 130000, "newUsers": 5000, "churnRate": 3.2 }
       ],
       "demographics": {
         "ageGroups": [
@@ -41,6 +41,7 @@
             "totalStreams": 2500000,
             "genres": ["Pop", "Country-Pop"],
             "averageRating": 4.8,
+            "image":"/taylor.jfif",
             "songs": [
               {
                 "id": "song_001",
@@ -92,6 +93,7 @@
             "totalStreams": 2100000,
             "genres": ["Hip Hop", "Rap", "R&B"],
             "averageRating": 4.7,
+            "image":"/drake.jpg",
             "songs": [
               {
                 "id": "song_004",
@@ -143,6 +145,7 @@
             "totalStreams": 1900000,
             "genres": ["R&B", "Pop", "Alternative R&B"],
             "averageRating": 4.6,
+            "image":"/weekend.png",
             "songs": [
               {
                 "id": "song_007",
@@ -194,6 +197,7 @@
             "totalStreams": 1800000,
             "genres": ["Reggaeton", "Latin Trap", "Pop"],
             "averageRating": 4.7,
+            "image":"/badbunny.jfif",
             "songs": [
               {
                 "id": "song_010",
@@ -245,6 +249,7 @@
             "totalStreams": 1700000,
             "genres": ["R&B", "Alternative R&B", "Pop"],
             "averageRating": 4.8,
+            "image":"/sza.jfif",
             "songs": [
               {
                 "id": "song_013",

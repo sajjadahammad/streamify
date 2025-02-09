@@ -11,7 +11,7 @@ import DynamicCrumbs from "./DynamicCrumbs";
 
 export default function DashboardWrapper({children}) {
   return (
-    <SidebarProvider>
+    <SidebarProvider className="font-poppins">
       <AppSidebar />
       <SidebarInset>
         <header
@@ -23,7 +23,7 @@ export default function DashboardWrapper({children}) {
           </div>
           <ThemeToggle/>
         </header>
-       <div className="px-5">
+       <div className="px-5 ">
         {children}
        </div>
       </SidebarInset>

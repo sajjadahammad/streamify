@@ -1,7 +1,7 @@
 import IndexCard from "@/components/cards/IndexCard";
 
 
-export default async function Index() {
+export default async function Home() {
 
   
     const response = await fetch('http://localhost:5000/indexdata');

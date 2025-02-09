@@ -41,7 +41,7 @@ export default function DashboardWrapper({children}) {
           </div>
           <ThemeToggle/>
         </header>
-       <div>
+       <div className="px-5">
         {children}
        </div>
       </SidebarInset>

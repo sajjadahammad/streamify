@@ -1,12 +1,5 @@
 import { AppSidebar } from "@/components/app-sidebar"
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+
 import { Separator } from "@/components/ui/separator"
 import {
   SidebarInset,
@@ -14,6 +7,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import ThemeToggle from "./ThemeToggle"
+import DynamicCrumbs from "./DynamicCrumbs";
 
 export default function DashboardWrapper({children}) {
   return (
@@ -25,19 +19,7 @@ export default function DashboardWrapper({children}) {
           <div className="flex items-center gap-2 px-4">
             <SidebarTrigger className="-ml-1" />
             <Separator orientation="vertical" className="mr-2 h-4" />
-            <Breadcrumb>
-              <BreadcrumbList>
-                <BreadcrumbItem className="hidden md:block">
-                  <BreadcrumbLink href="#">
-                    Building Your Application
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator className="hidden md:block" />
-                <BreadcrumbItem>
-                  <BreadcrumbPage>Data Fetching</BreadcrumbPage>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
+           <DynamicCrumbs/>
           </div>
           <ThemeToggle/>
         </header>

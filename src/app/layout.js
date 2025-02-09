@@ -4,6 +4,7 @@ import DashboardWrapper from "@/components/DashboardWrapper";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { Analytics } from '@vercel/analytics/next';
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

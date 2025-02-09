@@ -1,0 +1,430 @@
+{
+    "users": {
+      "total": 250000,
+      "active": 180000,
+      "growthData": [
+        { "month": "2024-02", "totalUsers": 250000, "activeUsers": 180000, "newUsers": 5000, "churnRate": 2.1 },
+        { "month": "2024-01", "totalUsers": 245000, "activeUsers": 175000, "newUsers": 5000, "churnRate": 2.3 },
+        { "month": "2023-12", "totalUsers": 240000, "activeUsers": 172000, "newUsers": 5000, "churnRate": 2.2 },
+        { "month": "2023-11", "totalUsers": 235000, "activeUsers": 168000, "newUsers": 5000, "churnRate": 2.4 },
+        { "month": "2023-10", "totalUsers": 230000, "activeUsers": 165000, "newUsers": 5000, "churnRate": 2.5 },
+        { "month": "2023-09", "totalUsers": 225000, "activeUsers": 160000, "newUsers": 5000, "churnRate": 2.6 },
+        { "month": "2023-08", "totalUsers": 220000, "activeUsers": 155000, "newUsers": 5000, "churnRate": 2.7 },
+        { "month": "2023-07", "totalUsers": 215000, "activeUsers": 150000, "newUsers": 5000, "churnRate": 2.8 },
+        { "month": "2023-06", "totalUsers": 210000, "activeUsers": 145000, "newUsers": 5000, "churnRate": 2.9 },
+        { "month": "2023-05", "totalUsers": 205000, "activeUsers": 140000, "newUsers": 5000, "churnRate": 3.0 },
+        { "month": "2023-04", "totalUsers": 200000, "activeUsers": 135000, "newUsers": 5000, "churnRate": 3.1 },
+        { "month": "2023-03", "totalUsers": 195000, "activeUsers": 130000, "newUsers": 5000, "churnRate": 3.2 }
+      ],
+      "demographics": {
+        "ageGroups": [
+          { "group": "13-17", "percentage": 15 },
+          { "group": "18-24", "percentage": 32 },
+          { "group": "25-34", "percentage": 28 },
+          { "group": "35-44", "percentage": 15 },
+          { "group": "45+", "percentage": 10 }
+        ],
+        "platforms": [
+          { "name": "Mobile App", "percentage": 65 },
+          { "name": "Desktop Web", "percentage": 25 },
+          { "name": "Tablet", "percentage": 8 },
+          { "name": "Smart TV", "percentage": 2 }
+        ]
+      }
+    },
+    "artists": {
+        "popularArtists": [
+          {
+            "id": "artist_001",
+            "name": "Taylor Swift",
+            "monthlyListeners": 1200000,
+            "totalStreams": 2500000,
+            "genres": ["Pop", "Country-Pop"],
+            "averageRating": 4.8,
+            "songs": [
+              {
+                "id": "song_001",
+                "name": "Cruel Summer",
+                "album": "Lover",
+                "releaseDate": "2019-08-23",
+                "streams": 1200000,
+                "duration": 178,
+                "popularity": 98,
+                "skippedRate": 0.12,
+                "avgCompletionRate": 0.92
+              },
+              {
+                "id": "song_002",
+                "name": "Anti-Hero",
+                "album": "Midnights",
+                "releaseDate": "2022-10-21",
+                "streams": 850000,
+                "duration": 200,
+                "popularity": 95,
+                "skippedRate": 0.13,
+                "avgCompletionRate": 0.89
+              },
+              {
+                "id": "song_003",
+                "name": "Karma",
+                "album": "Midnights",
+                "releaseDate": "2022-10-21",
+                "streams": 450000,
+                "duration": 205,
+                "popularity": 88,
+                "skippedRate": 0.15,
+                "avgCompletionRate": 0.87
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                { "group": "13-17", "percentage": 25 },
+                { "group": "18-24", "percentage": 35 },
+                { "group": "25-34", "percentage": 25 },
+                { "group": "35+", "percentage": 15 }
+              ]
+            }
+          },
+          {
+            "id": "artist_002",
+            "name": "Drake",
+            "monthlyListeners": 980000,
+            "totalStreams": 2100000,
+            "genres": ["Hip Hop", "Rap", "R&B"],
+            "averageRating": 4.7,
+            "songs": [
+              {
+                "id": "song_004",
+                "name": "Rich Flex",
+                "album": "Her Loss",
+                "releaseDate": "2022-11-04",
+                "streams": 800000,
+                "duration": 189,
+                "popularity": 92,
+                "skippedRate": 0.16,
+                "avgCompletionRate": 0.88
+              },
+              {
+                "id": "song_005",
+                "name": "Jimmy Cooks",
+                "album": "Honestly, Nevermind",
+                "releaseDate": "2022-06-17",
+                "streams": 550000,
+                "duration": 218,
+                "popularity": 89,
+                "skippedRate": 0.17,
+                "avgCompletionRate": 0.86
+              },
+              {
+                "id": "song_006",
+                "name": "Hotline Bling",
+                "album": "Views",
+                "releaseDate": "2016-05-20",
+                "streams": 350000,
+                "duration": 267,
+                "popularity": 85,
+                "skippedRate": 0.19,
+                "avgCompletionRate": 0.84
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                { "group": "13-17", "percentage": 20 },
+                { "group": "18-24", "percentage": 40 },
+                { "group": "25-34", "percentage": 30 },
+                { "group": "35+", "percentage": 10 }
+              ]
+            }
+          },
+          {
+            "id": "artist_003",
+            "name": "The Weeknd",
+            "monthlyListeners": 890000,
+            "totalStreams": 1900000,
+            "genres": ["R&B", "Pop", "Alternative R&B"],
+            "averageRating": 4.6,
+            "songs": [
+              {
+                "id": "song_007",
+                "name": "Blinding Lights",
+                "album": "After Hours",
+                "releaseDate": "2020-03-20",
+                "streams": 750000,
+                "duration": 200,
+                "popularity": 94,
+                "skippedRate": 0.14,
+                "avgCompletionRate": 0.90
+              },
+              {
+                "id": "song_008",
+                "name": "Starboy",
+                "album": "Starboy",
+                "releaseDate": "2016-11-25",
+                "streams": 500000,
+                "duration": 230,
+                "popularity": 88,
+                "skippedRate": 0.16,
+                "avgCompletionRate": 0.87
+              },
+              {
+                "id": "song_009",
+                "name": "Die For You",
+                "album": "Starboy",
+                "releaseDate": "2016-11-25",
+                "streams": 450000,
+                "duration": 260,
+                "popularity": 86,
+                "skippedRate": 0.18,
+                "avgCompletionRate": 0.85
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                { "group": "13-17", "percentage": 15 },
+                { "group": "18-24", "percentage": 35 },
+                { "group": "25-34", "percentage": 35 },
+                { "group": "35+", "percentage": 15 }
+              ]
+            }
+          },
+          {
+            "id": "artist_004",
+            "name": "Bad Bunny",
+            "monthlyListeners": 870000,
+            "totalStreams": 1800000,
+            "genres": ["Reggaeton", "Latin Trap", "Pop"],
+            "averageRating": 4.7,
+            "songs": [
+              {
+                "id": "song_010",
+                "name": "Tití Me Preguntó",
+                "album": "Un Verano Sin Ti",
+                "releaseDate": "2022-05-06",
+                "streams": 700000,
+                "duration": 244,
+                "popularity": 93,
+                "skippedRate": 0.15,
+                "avgCompletionRate": 0.88
+              },
+              {
+                "id": "song_011",
+                "name": "Me Porto Bonito",
+                "album": "Un Verano Sin Ti",
+                "releaseDate": "2022-05-06",
+                "streams": 650000,
+                "duration": 178,
+                "popularity": 91,
+                "skippedRate": 0.16,
+                "avgCompletionRate": 0.87
+              },
+              {
+                "id": "song_012",
+                "name": "Dakiti",
+                "album": "El Último Tour Del Mundo",
+                "releaseDate": "2020-10-30",
+                "streams": 400000,
+                "duration": 205,
+                "popularity": 87,
+                "skippedRate": 0.17,
+                "avgCompletionRate": 0.86
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                { "group": "13-17", "percentage": 20 },
+                { "group": "18-24", "percentage": 40 },
+                { "group": "25-34", "percentage": 30 },
+                { "group": "35+", "percentage": 10 }
+              ]
+            }
+          },
+          {
+            "id": "artist_005",
+            "name": "SZA",
+            "monthlyListeners": 820000,
+            "totalStreams": 1700000,
+            "genres": ["R&B", "Alternative R&B", "Pop"],
+            "averageRating": 4.8,
+            "songs": [
+              {
+                "id": "song_013",
+                "name": "Kill Bill",
+                "album": "SOS",
+                "releaseDate": "2022-12-09",
+                "streams": 900000,
+                "duration": 153,
+                "popularity": 95,
+                "skippedRate": 0.14,
+                "avgCompletionRate": 0.91
+              },
+              {
+                "id": "song_014",
+                "name": "Good Days",
+                "album": "SOS",
+                "releaseDate": "2022-12-09",
+                "streams": 500000,
+                "duration": 279,
+                "popularity": 88,
+                "skippedRate": 0.16,
+                "avgCompletionRate": 0.88
+              },
+              {
+                "id": "song_015",
+                "name": "I Hate U",
+                "album": "SOS",
+                "releaseDate": "2022-12-09",
+                "streams": 450000,
+                "duration": 242,
+                "popularity": 86,
+                "skippedRate": 0.17,
+                "avgCompletionRate": 0.87
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                { "group": "13-17", "percentage": 20 },
+                { "group": "18-24", "percentage": 35 },
+                { "group": "25-34", "percentage": 30 },
+                { "group": "35+", "percentage": 15 }
+              ]
+            }
+          }
+        ]
+      },
+    "revenue": {
+      "total": 5250000,
+      "distribution": [
+        { "source": "Premium Subscriptions", "amount": 3500000 },
+        { "source": "Family Plans", "amount": 700000 },
+        { "source": "Audio Advertisements", "amount": 600000 },
+        { "source": "Display Advertisements", "amount": 250000 },
+        { "source": "One-time Purchases", "amount": 200000 }
+      ],
+      "subscriptionTiers": [
+        { "name": "Free", "users": 150000 },
+        { "name": "Individual Premium", "users": 70000 },
+        { "name": "Family Plan", "users": 20000 },
+        { "name": "Student", "users": 10000 }
+      ],
+      "monthlyTrend": [
+        { "month": "2024-02", "amount": 5250000 },
+        { "month": "2024-01", "amount": 5100000 },
+        { "month": "2023-12", "amount": 5000000 },
+        { "month": "2023-11", "amount": 4800000 }
+      ]
+    },
+    "streaming": {
+      "totalStreams": 15000000,
+      "topArtist": {
+        "name": "Taylor Swift",
+        "monthlyStreams": 2500000,
+        "topSong": "Cruel Summer",
+        "monthlyListeners": 1200000,
+        "avgDailyStreams": 83333
+      },
+      "topSongs": [
+        { "name": "Cruel Summer", "artist": "Taylor Swift", "streams": 1200000, "avgDuration": 178, "skippedRate": 0.12 },
+        { "name": "vampire", "artist": "Olivia Rodrigo", "streams": 1000000, "avgDuration": 215, "skippedRate": 0.15 },
+        { "name": "Last Night", "artist": "Morgan Wallen", "streams": 950000, "avgDuration": 165, "skippedRate": 0.18 },
+        { "name": "Kill Bill", "artist": "SZA", "streams": 900000, "avgDuration": 153, "skippedRate": 0.14 },
+        { "name": "Anti-Hero", "artist": "Taylor Swift", "streams": 850000, "avgDuration": 200, "skippedRate": 0.13 },
+        { "name": "Rich Flex", "artist": "Drake", "streams": 800000, "avgDuration": 189, "skippedRate": 0.16 },
+        { "name": "Unholy", "artist": "Sam Smith", "streams": 750000, "avgDuration": 156, "skippedRate": 0.19 },
+        { "name": "About Damn Time", "artist": "Lizzo", "streams": 700000, "avgDuration": 191, "skippedRate": 0.17 },
+        { "name": "As It Was", "artist": "Harry Styles", "streams": 650000, "avgDuration": 167, "skippedRate": 0.15 },
+        { "name": "Bad Habit", "artist": "Steve Lacy", "streams": 600000, "avgDuration": 232, "skippedRate": 0.20 }
+      ],
+      "topGenres": [
+        { "name": "Pop", "streams": 5000000 },
+        { "name": "Hip Hop", "streams": 4000000 },
+        { "name": "R&B", "streams": 2000000 },
+        { "name": "Rock", "streams": 1500000 },
+        { "name": "Country", "streams": 1000000 }
+      ],
+      "peakHours": [
+        { "hour": "00:00", "streams": 400000 },
+        { "hour": "06:00", "streams": 300000 },
+        { "hour": "12:00", "streams": 750000 },
+        { "hour": "18:00", "streams": 900000 }
+      ]
+    },
+    "recentStreams": [
+      {
+        "id": 1,
+        "songName": "Cruel Summer",
+        "artist": "Taylor Swift",
+        "dateStreamed": "2024-02-09T15:30:00Z",
+        "streamCount": 1245,
+        "userId": "user_789012",
+        "duration": 178,
+        "completed": true,
+        "platform": "Mobile App"
+      },
+      {
+        "id": 2,
+        "songName": "vampire",
+        "artist": "Olivia Rodrigo",
+        "dateStreamed": "2024-02-09T15:28:00Z",
+        "streamCount": 1122,
+        "userId": "user_345678",
+        "duration": 215,
+        "completed": true,
+        "platform": "Desktop Web"
+      },
+      {
+        "id": 3,
+        "songName": "Last Night",
+        "artist": "Morgan Wallen",
+        "dateStreamed": "2024-02-09T15:25:00Z",
+        "streamCount": 987,
+        "userId": "user_901234",
+        "duration": 165,
+        "completed": false,
+        "platform": "Mobile App"
+      },
+      {
+        "id": 4,
+        "songName": "Kill Bill",
+        "artist": "SZA",
+        "dateStreamed": "2024-02-09T15:20:00Z",
+        "streamCount": 876,
+        "userId": "user_567890",
+        "duration": 153,
+        "completed": true,
+        "platform": "Tablet"
+      },
+      {
+        "id": 5,
+        "songName": "Anti-Hero",
+        "artist": "Taylor Swift",
+        "dateStreamed": "2024-02-09T15:15:00Z",
+        "streamCount": 765,
+        "userId": "user_123456",
+        "duration": 200,
+        "completed": true,
+        "platform": "Mobile App"
+      }
+    ],
+    "indexdata":[
+      {
+        "metric": "Total Users",
+        "value": 250000,
+        "iconName": "Users"
+      },
+      {
+        "metric": "Total Streams",
+        "value": 15000000,
+        "iconName": "Play"
+      },
+      {
+        "metric": "Revenue",
+        "value": 5250000,
+        "iconName": "DollarSign"
+      },
+      {
+        "metric": "Active Users",
+        "value": 5250000,
+        "iconName": "UserCheck"
+      }
+    ]
+  }

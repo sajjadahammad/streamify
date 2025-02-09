@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import DashboardWrapper from "@/components/DashboardWrapper";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import { Analytics } from '@vercel/analytics/next';
+// import { Analytics } from '@vercel/analytics/next';
 
 
 const geistSans = Geist({
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <DashboardWrapper>
             {children}
-            <Analytics />
+            {/* <Analytics /> */}
           </DashboardWrapper>
         </ThemeProvider>
       </body>

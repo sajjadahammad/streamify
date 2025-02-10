@@ -1,10 +1,21 @@
-export const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000' 
+export const baseUrl =  "http://localhost:3000";
+
+export async function getIndexData(){
+  try {
+    const response = await fetch(`${baseUrl}/api/index-data`);
+    const data = await response.json();
+    return data; 
+  } catch (error) {
+    console.error("Error fetching index data:", error);
+    return [];
+  }
+}
 
 export async function getData() {
     try {
       const [usersRes, revenueRes] = await Promise.all([
-        fetch(`${apiUrl}/users`, { cache: "no-store" }),
-        fetch(`${apiUrl}/revenue`, { cache: "no-store" }),
+        fetch(`${baseUrl}/api/users`),
+        fetch(`${baseUrl}/api/revenue`),
       ]);
   
       if (!usersRes.ok || !revenueRes.ok) {
@@ -14,11 +25,9 @@ export async function getData() {
       const usersData = await usersRes.json();
       const revenueData = await revenueRes.json();
   
-      // Extract nested arrays correctly
       const userGrowthData = usersData.growthData || [];
       const revenueTrend = revenueData.monthlyTrend || [];
   
-      // Combine user and revenue data
       const chartData = userGrowthData.map((user) => {
         const revenueMatch = revenueTrend.find((rev) => rev.month === user.month);
         return {
@@ -35,9 +44,13 @@ export async function getData() {
     }
   }
   
-  export async function getArtist(){
-    const res = await fetch(`${apiUrl}/artists`)
-    const data =await res.json()
-
-    return data.popularArtists
+  export async function getArtist() {
+    try {
+      const res = await fetch(`${baseUrl}/api/artists`);
+      const data = await res.json();
+      return data.popularArtists;
+    } catch (error) {
+      console.error("Error fetching artist data:", error);
+      return [];
+    }
   }

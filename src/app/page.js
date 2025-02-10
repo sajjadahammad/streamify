@@ -2,14 +2,15 @@ import IndexCard from "@/components/cards/IndexCard";
 import TopArtist from "@/components/cards/TopArtist";
 import { ChartOne} from "@/components/charts/ChartOne";
 import ChartTwo from "@/components/charts/ChartTwo";
-import { apiUrl, getArtist, getData } from "@/lib/data";
+import { apiUrl, getArtist, getData, getIndexData } from "@/lib/data";
 
 
 
 export default async function Home() {
 
-    const response = await fetch(`${apiUrl}/indexdata`);
-    const data = await response.json();
+  
+
+    const indexData = await getIndexData()
     const chartOneData = await getData()
     const artistData = await getArtist()
     
@@ -19,7 +20,7 @@ export default async function Home() {
       <div className="flex gap-4">
         <div className="basis-2/3 space-y-4">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {data.map((item,i)=>(
+            {indexData.map((item,i)=>(
               <IndexCard key={i} data={item}/>
             ))}
           </div>

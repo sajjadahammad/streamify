@@ -15,7 +15,7 @@ describe("StreamTable Component", () => {
     test("renders table with correct headers", () => {
         render(<StreamTable data={mockData} />);
 
-        // Check if column headers are rendered
+
         expect(screen.getByText("Song")).toBeInTheDocument();
         expect(screen.getByText("Artist")).toBeInTheDocument();
         expect(screen.getByText("Streams")).toBeInTheDocument();
@@ -26,11 +26,9 @@ describe("StreamTable Component", () => {
     test("renders table rows with song data", () => {
         render(<StreamTable data={mockData} />);
 
-        // Check if the first song appears
         expect(screen.getByText("Cruel Summer")).toBeInTheDocument();
         expect(screen.getByText("Taylor Swift")).toBeInTheDocument();
 
-        // Check if the second song appears
         expect(screen.getByText("vampire")).toBeInTheDocument();
         expect(screen.getByText("Olivia Rodrigo")).toBeInTheDocument();
     });
@@ -40,10 +38,10 @@ describe("StreamTable Component", () => {
 
         const searchInput = screen.getByPlaceholderText("Search Song");
 
-        // Type "Cruel" in the search box
+
         fireEvent.change(searchInput, { target: { value: "Cruel" } });
 
-        // Only "Cruel Summer" should be visible
+    
         expect(screen.getByText("Cruel Summer")).toBeInTheDocument();
         expect(screen.queryByText("vampire")).not.toBeInTheDocument();
         expect(screen.queryByText("Kill Bill")).not.toBeInTheDocument();
@@ -55,13 +53,12 @@ describe("StreamTable Component", () => {
         const nextButton = screen.getByRole("button", { name: /next/i });
         const prevButton = screen.getByRole("button", { name: /previous/i });
 
-        // Ensure Previous is disabled at start
         expect(prevButton).toBeDisabled();
 
-        // Click Next page
+
         fireEvent.click(nextButton);
 
-        // Ensure Previous is now enabled after moving to next page
+    
         expect(prevButton).not.toBeDisabled();
     });
 

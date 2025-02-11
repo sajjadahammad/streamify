@@ -54,3 +54,14 @@ export async function getData() {
       return [];
     }
   }
+
+  export async function getRevenue() {
+    try {
+      const res = await fetch(`${baseUrl}/api/revenue`);
+      const data = await res.json();
+      return data
+    } catch (error) {
+      console.error("Error fetching artist data:", error);
+      return [];
+    }
+  }

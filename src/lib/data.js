@@ -1,4 +1,5 @@
-export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+export const baseUrl = 'https://streamify-puce.vercel.app/'
+// export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 
 export async function getIndexData(){
   try {
@@ -70,6 +71,17 @@ export async function getData() {
   export async function getTopSongs() {
     try {
       const res = await fetch(`${baseUrl}/api/top-songs`);
+      const data = await res.json();
+      return data
+    } catch (error) {
+      console.error("Error fetching artist data:", error);
+      return [];
+    }
+  }
+
+  export async function getStreaminnData() {
+    try {
+      const res = await fetch(`${baseUrl}/api/streaming`);
       const data = await res.json();
       return data
     } catch (error) {

@@ -13,7 +13,8 @@ import {
   Settings2,
   SquareTerminal,
   Users,
-  CircleDollarSign
+  CircleDollarSign,
+  Podcast
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -65,9 +66,9 @@ const data = {
       icon: Users,
     },
     {
-      name: "Revenue",
-      url: "#",
-      icon: CircleDollarSign,
+      name: "Recent Streams",
+      url: "/streams",
+      icon: Podcast,
     },
   ],
 

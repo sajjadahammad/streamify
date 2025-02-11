@@ -1,64 +1,44 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { 
-  Breadcrumb, 
-  BreadcrumbItem, 
-  BreadcrumbLink, 
-  BreadcrumbList, 
-  BreadcrumbPage, 
-  BreadcrumbSeparator 
-} from "@/components/ui/breadcrumb";
+import Link from "next/link";
+import { ChevronRight, Home } from "lucide-react";
 
-export default function DynamicCrumbs() {
-  const pathname = usePathname();
 
-  const generateBreadcrumbs = () => {
-    const segments = pathname
-      .replace(/\/$/, '')
-      .split('/')
-      .filter(segment => segment !== '');
+export default function Breadcrumbs() {
+    const pathname = usePathname();
 
-    const breadcrumbs = [];
+    // Remove trailing slash and split path into segments
+    const segments = pathname.replace(/\/$/, "").split("/").filter(Boolean);
 
-    breadcrumbs.push(
-      <BreadcrumbItem key="home" className="hidden md:flex items-center">
-        <BreadcrumbLink href="/">Home</BreadcrumbLink>
-        {segments.length > 0 && <BreadcrumbSeparator />}
-      </BreadcrumbItem>
+    return (
+        <nav aria-label="Breadcrumb" className="flex items-center space-x-2 text-sm text-gray-500">
+            <Link href="/" className="flex items-center gap-1 text-gray-200 hover:text-gray-400">
+                <Home className="w-4 h-4" />
+                <span>Home</span>
+            </Link>
+
+            {segments.length > 0 && <span className="text-gray-400"><ChevronRight size={15} /></span>}
+
+            {segments.map((segment, index) => {
+                const href = `/${segments.slice(0, index + 1).join("/")}`;
+                const formattedText = segment
+                    .replace(/-/g, " ")
+                    .replace(/\b\w/g, (char) => char.toUpperCase());
+
+                return (
+                    <div key={href} className="flex items-center space-x-2">
+                        {index !== 0 && <span className="text-gray-400">/</span>}
+                        {index === segments.length - 1 ? (
+                            <span className="text-gray-100 font-medium">{formattedText}</span>
+                        ) : (
+                            <Link href={href} className="text-gray-100 hover:text-gray-900">
+                                {formattedText}
+                            </Link>
+                        )}
+                    </div>
+                );
+            })}
+        </nav>
     );
-
-    segments.forEach((segment, index) => {
-      const url = `/${segments.slice(0, index + 1).join('/')}`;
-      const formattedText = segment
-        .split('-')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ');
-
-      if (index === segments.length - 1) {
-        breadcrumbs.push(
-          <BreadcrumbPage key={url}>{formattedText}</BreadcrumbPage>
-        );
-      } else {
-        breadcrumbs.push(
-          <>
-            <BreadcrumbItem key={url} className="hidden md:block">
-              <BreadcrumbLink href={url}>{formattedText}</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator key={`${url}-separator`} />
-          </>
-        );
-      }
-    });
-
-    return breadcrumbs;
-  };
-
-  if (pathname === '/') return null;
-
-  return (
-    <Breadcrumb>
-      <BreadcrumbList>{generateBreadcrumbs()}</BreadcrumbList>
-    </Breadcrumb>
-  );
 }

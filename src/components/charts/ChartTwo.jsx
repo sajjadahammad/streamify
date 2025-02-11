@@ -64,7 +64,7 @@ export default function RevenueDistributionChart({ revenue }) {
                 {chartData.length > 0 ? (
                     <ChartContainer
                         config={chartConfig}
-                        className="mx-auto aspect-square max-h-[310px]"
+                        className="mx-auto aspect-square max-h-[300px]"
                     >
                         <PieChart>
                             <ChartTooltip

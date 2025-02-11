@@ -36,7 +36,7 @@ export function ChartOne({ data }) {
         {/* <CardDescription>January - June 2024</CardDescription> */}
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig} className="max-h-96 w-full">
+        <ChartContainer config={chartConfig} className="max-h-[340px]   w-full">
           <LineChart
             accessibilityLayer
             data={data}

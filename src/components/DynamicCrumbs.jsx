@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { usePathname } from "next/navigation";
 import { 
@@ -9,52 +9,56 @@ import {
   BreadcrumbPage, 
   BreadcrumbSeparator 
 } from "@/components/ui/breadcrumb";
-import Link from "next/link";
 
 export default function DynamicCrumbs() {
   const pathname = usePathname();
-  
+
   const generateBreadcrumbs = () => {
     const segments = pathname
       .replace(/\/$/, '')
       .split('/')
       .filter(segment => segment !== '');
 
-    return segments.map((segment, index) => {
+    const breadcrumbs = [];
+
+    breadcrumbs.push(
+      <BreadcrumbItem key="home" className="hidden md:flex items-center">
+        <BreadcrumbLink href="/">Home</BreadcrumbLink>
+        {segments.length > 0 && <BreadcrumbSeparator />}
+      </BreadcrumbItem>
+    );
+
+    segments.forEach((segment, index) => {
       const url = `/${segments.slice(0, index + 1).join('/')}`;
-      
       const formattedText = segment
         .split('-')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
-      const isLastItem = index === segments.length - 1;
 
-      return (
-        <BreadcrumbItem key={url} className="hidden md:block">
-          {isLastItem ? (
-            <BreadcrumbPage>{formattedText}</BreadcrumbPage>
-          ) : (
-            <>
+      if (index === segments.length - 1) {
+        breadcrumbs.push(
+          <BreadcrumbPage key={url}>{formattedText}</BreadcrumbPage>
+        );
+      } else {
+        breadcrumbs.push(
+          <>
+            <BreadcrumbItem key={url} className="hidden md:block">
               <BreadcrumbLink href={url}>{formattedText}</BreadcrumbLink>
-              <BreadcrumbSeparator />
-            </>
-          )}
-        </BreadcrumbItem>
-      );
+            </BreadcrumbItem>
+            <BreadcrumbSeparator key={`${url}-separator`} />
+          </>
+        );
+      }
     });
+
+    return breadcrumbs;
   };
 
   if (pathname === '/') return null;
 
   return (
     <Breadcrumb>
-      <BreadcrumbList>
-        <BreadcrumbItem className="hidden md:block">
-          <BreadcrumbLink href="/">Home</BreadcrumbLink>
-          <BreadcrumbSeparator />
-        </BreadcrumbItem>
-        {generateBreadcrumbs()}
-      </BreadcrumbList>
+      <BreadcrumbList>{generateBreadcrumbs()}</BreadcrumbList>
     </Breadcrumb>
   );
 }

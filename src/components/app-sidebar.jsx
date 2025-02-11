@@ -12,6 +12,8 @@ import {
   PieChart,
   Settings2,
   SquareTerminal,
+  Users,
+  CircleDollarSign
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -58,14 +60,14 @@ const data = {
       icon: Frame,
     },
     {
-      name: "Top Artist",
-      url: "/top-artists",
-      icon: PieChart,
+      name: "Artists",
+      url: "/artists",
+      icon: Users,
     },
     {
       name: "Revenue",
       url: "#",
-      icon: Map,
+      icon: CircleDollarSign,
     },
   ],
 

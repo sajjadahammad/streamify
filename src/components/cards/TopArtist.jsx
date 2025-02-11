@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function TopArtist({data}) {
     return (
-        <div className="flex px-3 gap-7">
-            <div className="relative"><span className="font-geistBungee absolute -left-5  text-5xl font-semibold z-10">{data.id.slice(-1)}</span>
+        <div className="flex px-3 gap-7 border-dashed border-b-2 py-5">
+            <div className="flex gap-2"><span className="font-geistBungee   text-5xl font-semibold shrink-0 w-8 self-center text-center">{data.id.slice(-1)}</span>
             <Image src={data.image} alt="" width={50} height={50} className="w-full rounded-md z-30 relative" />
             </div>
             <div className="self-center">

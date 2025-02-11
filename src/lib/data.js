@@ -65,3 +65,15 @@ export async function getData() {
       return [];
     }
   }
+
+
+  export async function getTopSongs() {
+    try {
+      const res = await fetch(`${baseUrl}/api/top-songs`);
+      const data = await res.json();
+      return data
+    } catch (error) {
+      console.error("Error fetching artist data:", error);
+      return [];
+    }
+  }

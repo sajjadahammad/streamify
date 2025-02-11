@@ -293,7 +293,372 @@
                 { "group": "35+", "percentage": 15 }
               ]
             }
+          },
+          {
+            "id": "artist_006",
+            "name": "Ariana Grande",
+            "monthlyListeners": 780000,
+            "totalStreams": 1600000,
+            "genres": ["Pop", "R&B"],
+            "averageRating": 4.6,
+            "image": "/ariana.jpg",
+            "songs": [
+              {
+                "id": "song_016",
+                "name": "7 Rings",
+                "album": "thank u, next",
+                "releaseDate": "2019-02-08",
+                "streams": 800000,
+                "duration": 178,
+                "popularity": 92,
+                "skippedRate": 0.15,
+                "avgCompletionRate": 0.89
+              },
+              {
+                "id": "song_017",
+                "name": "Thank U, Next",
+                "album": "thank u, next",
+                "releaseDate": "2019-02-08",
+                "streams": 450000,
+                "duration": 208,
+                "popularity": 89,
+                "skippedRate": 0.16,
+                "avgCompletionRate": 0.87
+              },
+              {
+                "id": "song_018",
+                "name": "Positions",
+                "album": "Positions",
+                "releaseDate": "2020-10-30",
+                "streams": 350000,
+                "duration": 172,
+                "popularity": 87,
+                "skippedRate": 0.17,
+                "avgCompletionRate": 0.86
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                {"group": "13-17", "percentage": 30},
+                {"group": "18-24", "percentage": 35},
+                {"group": "25-34", "percentage": 25},
+                {"group": "35+", "percentage": 10}
+              ]
+            }
+          },
+          {
+            "id": "artist_007",
+            "name": "Dua Lipa",
+            "monthlyListeners": 750000,
+            "totalStreams": 1500000,
+            "genres": ["Pop", "Dance-Pop"],
+            "averageRating": 4.5,
+            "image": "/dualipa.webp",
+            "songs": [
+              {
+                "id": "song_019",
+                "name": "Levitating",
+                "album": "Future Nostalgia",
+                "releaseDate": "2020-03-27",
+                "streams": 700000,
+                "duration": 203,
+                "popularity": 93,
+                "skippedRate": 0.14,
+                "avgCompletionRate": 0.90
+              },
+              {
+                "id": "song_020",
+                "name": "Don't Start Now",
+                "album": "Future Nostalgia",
+                "releaseDate": "2020-03-27",
+                "streams": 450000,
+                "duration": 183,
+                "popularity": 90,
+                "skippedRate": 0.15,
+                "avgCompletionRate": 0.88
+              },
+              {
+                "id": "song_021",
+                "name": "Cold Heart (Pnau Remix)",
+                "album": "Future Nostalgia",
+                "releaseDate": "2020-03-27",
+                "streams": 350000,
+                "duration": 200,
+                "popularity": 88,
+                "skippedRate": 0.16,
+                "avgCompletionRate": 0.87
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                {"group": "13-17", "percentage": 25},
+                {"group": "18-24", "percentage": 40},
+                {"group": "25-34", "percentage": 25},
+                {"group": "35+", "percentage": 10}
+              ]
+            }
+          },
+          {
+            "id": "artist_008",
+            "name": "Ed Sheeran",
+            "monthlyListeners": 720000,
+            "totalStreams": 1400000,
+            "genres": ["Pop", "Acoustic"],
+            "averageRating": 4.7,
+            "image": "/edsheeran.png",
+            "songs": [
+              {
+                "id": "song_022",
+                "name": "Shape of You",
+                "album": "÷ (Divide)",
+                "releaseDate": "2017-03-03",
+                "streams": 900000,
+                "duration": 233,
+                "popularity": 94,
+                "skippedRate": 0.13,
+                "avgCompletionRate": 0.91
+              },
+              {
+                "id": "song_023",
+                "name": "Bad Habits",
+                "album": "=",
+                "releaseDate": "2021-10-29",
+                "streams": 400000,
+                "duration": 231,
+                "popularity": 90,
+                "skippedRate": 0.14,
+                "avgCompletionRate": 0.89
+              },
+              {
+                "id": "song_024",
+                "name": "Shivers",
+                "album": "=",
+                "releaseDate": "2021-10-29",
+                "streams": 300000,
+                "duration": 207,
+                "popularity": 88,
+                "skippedRate": 0.15,
+                "avgCompletionRate": 0.88
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                {"group": "13-17", "percentage": 20},
+                {"group": "18-24", "percentage": 30},
+                {"group": "25-34", "percentage": 30},
+                {"group": "35+", "percentage": 20}
+              ]
+            }
+          },
+          {
+            "id": "artist_009",
+            "name": "Beyoncé",
+            "monthlyListeners": 700000,
+            "totalStreams": 1300000,
+            "genres": ["R&B", "Pop", "Hip Hop"],
+            "averageRating": 4.8,
+            "image": "/beyonce.jpg",
+            "songs": [
+              {
+                "id": "song_025",
+                "name": "BREAK MY SOUL",
+                "album": "RENAISSANCE",
+                "releaseDate": "2022-07-29",
+                "streams": 600000,
+                "duration": 279,
+                "popularity": 92,
+                "skippedRate": 0.14,
+                "avgCompletionRate": 0.90
+              },
+              {
+                "id": "song_026",
+                "name": "CUFF IT",
+                "album": "RENAISSANCE",
+                "releaseDate": "2022-07-29",
+                "streams": 400000,
+                "duration": 257,
+                "popularity": 89,
+                "skippedRate": 0.15,
+                "avgCompletionRate": 0.88
+              },
+              {
+                "id": "song_027",
+                "name": "Drunk in Love",
+                "album": "BEYONCÉ",
+                "releaseDate": "2013-12-13",
+                "streams": 300000,
+                "duration": 313,
+                "popularity": 87,
+                "skippedRate": 0.16,
+                "avgCompletionRate": 0.87
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                {"group": "13-17", "percentage": 15},
+                {"group": "18-24", "percentage": 30},
+                {"group": "25-34", "percentage": 35},
+                {"group": "35+", "percentage": 20}
+              ]
+            }
+          },
+          {
+            "id": "artist_010",
+            "name": "Justin Bieber",
+            "monthlyListeners": 680000,
+            "totalStreams": 1200000,
+            "genres": ["Pop", "R&B"],
+            "averageRating": 4.6,
+            "image": "/justin.png",
+            "songs": [
+              {
+                "id": "song_028",
+                "name": "Peaches",
+                "album": "Justice",
+                "releaseDate": "2021-03-19",
+                "streams": 550000,
+                "duration": 198,
+                "popularity": 91,
+                "skippedRate": 0.15,
+                "avgCompletionRate": 0.89
+              },
+              {
+                "id": "song_029",
+                "name": "Stay (with Justin Bieber)",
+                "album": "Justice",
+                "releaseDate": "2021-03-19",
+                "streams": 400000,
+                "duration": 141,
+                "popularity": 89,
+                "skippedRate": 0.16,
+                "avgCompletionRate": 0.87
+              },
+              {
+                "id": "song_030",
+                "name": "Ghost",
+                "album": "Justice",
+                "releaseDate": "2021-03-19",
+                "streams": 250000,
+                "duration": 153,
+                "popularity": 87,
+                "skippedRate": 0.17,
+                "avgCompletionRate": 0.86
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                {"group": "13-17", "percentage": 25},
+                {"group": "18-24", "percentage": 35},
+                {"group": "25-34", "percentage": 25},
+                {"group": "35+", "percentage": 15}
+              ]
+            }
+          },
+          {
+            "id": "artist_011",
+            "name": "Coldplay",
+            "monthlyListeners": 650000,
+            "totalStreams": 1100000,
+            "genres": ["Alternative Rock", "Pop Rock"],
+            "averageRating": 4.7,
+            "image": "/coldplay.png",
+            "songs": [
+              {
+                "id": "song_031",
+                "name": "The Scientist",
+                "album": "A Rush of Blood to the Head",
+                "releaseDate": "2002-08-05",
+                "streams": 500000,
+                "duration": 251,
+                "popularity": 92,
+                "skippedRate": 0.12,
+                "avgCompletionRate": 0.90
+              },
+              {
+                "id": "song_032",
+                "name": "Clocks",
+                "album": "A Rush of Blood to the Head",
+                "releaseDate": "2002-08-05",
+                "streams": 400000,
+                "duration": 307,
+                "popularity": 90,
+                "skippedRate": 0.13,
+                "avgCompletionRate": 0.88
+              },
+              {
+                "id": "song_033",
+                "name": "Fix You",
+                "album": "X&Y",
+                "releaseDate": "2005-06-06",
+                "streams": 200000,
+                "duration": 297,
+                "popularity": 88,
+                "skippedRate": 0.15,
+                "avgCompletionRate": 0.86
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                {"group": "13-17", "percentage": 15},
+                {"group": "18-24", "percentage": 25},
+                {"group": "25-34", "percentage": 35},
+                {"group": "35+", "percentage": 25}
+              ]
+            }
+          },
+          {
+            "id": "artist_012",
+            "name": "Bruno Mars",
+            "monthlyListeners": 620000,
+            "totalStreams": 1000000,
+            "genres": ["Pop", "R&B", "Funk"],
+            "averageRating": 4.6,
+            "image": "/brunomars.jpg",
+            "songs": [
+              {
+                "id": "song_034",
+                "name": "Uptown Funk (feat. Mark Ronson)",
+                "album": "Uptown Special",
+                "releaseDate": "2014-11-10",
+                "streams": 600000,
+                "duration": 269,
+                "popularity": 93,
+                "skippedRate": 0.11,
+                "avgCompletionRate": 0.91
+              },
+              {
+                "id": "song_035",
+                "name": "24K Magic",
+                "album": "24K Magic",
+                "releaseDate": "2016-11-18",
+                "streams": 300000,
+                "duration": 226,
+                "popularity": 90,
+                "skippedRate": 0.13,
+                "avgCompletionRate": 0.89
+              },
+              {
+                "id": "song_036",
+                "name": "Just the Way You Are",
+                "album": "Doo-Wops & Hooligans",
+                "releaseDate": "2010-09-27",
+                "streams": 100000,
+                "duration": 220,
+                "popularity": 87,
+                "skippedRate": 0.16,
+                "avgCompletionRate": 0.86
+              }
+            ],
+            "demographics": {
+              "ageGroups": [
+                {"group": "13-17", "percentage": 20},
+                {"group": "18-24", "percentage": 30},
+                {"group": "25-34", "percentage": 35},
+                {"group": "35+", "percentage": 15}
+              ]
+            }
           }
+  
         ]
       },
     "revenue": {

@@ -5,7 +5,7 @@ export default async function RecentStreams() {
 
     const streamingData =await getStreamingData()
 
-    console.log('st',streamingData);
+    // console.log('st',streamingData);
     return (
         <div>
             <h1 className='text-2xl font-semibold pt-5'>Stream List</h1>

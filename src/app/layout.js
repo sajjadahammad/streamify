@@ -2,6 +2,7 @@ import { Geist, Geist_Mono,Bungee_Outline,Poppins } from "next/font/google";
 import "./globals.css";
 import DashboardWrapper from "@/components/DashboardWrapper";
 import { ThemeProvider } from "@/providers/ThemeProvider";
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <DashboardWrapper>
             {children}
+            <Analytics/>
           </DashboardWrapper>
         </ThemeProvider>
       </body>

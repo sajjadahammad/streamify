@@ -79,7 +79,7 @@ export async function getData() {
     }
   }
 
-  export async function getStreaminnData() {
+  export async function getStreamingData() {
     try {
       const res = await fetch(`${baseUrl}/api/streaming`);
       const data = await res.json();

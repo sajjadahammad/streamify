@@ -1,6 +1,5 @@
-import ArtistTable from '@/components/ArtistTable'
+import ArtistTable from '@/components/data-table/ArtistTable'
 import { getArtist } from '@/lib/data'
-import React from 'react'
 
 export default async function TopArtists() {
 

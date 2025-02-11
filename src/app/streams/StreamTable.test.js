@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, within } from "@testing-library/react";
-import StreamTable from "@/components/data-table/StreamTable";
+import StreamTable from "../../components/data-table/StreamTable";
 import "@testing-library/jest-dom";
 
 // ✅ Mock Data (Same Structure as API Response)

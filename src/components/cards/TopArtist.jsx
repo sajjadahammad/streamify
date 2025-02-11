@@ -5,7 +5,7 @@ export default function TopArtist({data}) {
     return (
         <div className="flex px-3 gap-7 border-dashed border-b-2 py-5">
             <div className="flex gap-2"><span className="font-geistBungee   text-5xl font-semibold shrink-0 w-8 self-center text-center">{data.id.slice(-1)}</span>
-            <img src={data.image} alt="" width={50} height={50} className="w-full rounded-md z-30 relative" />
+            <img src={data.image} alt=""  className="w-16 rounded-md z-30 relative" />
             </div>
             <div className="self-center">
                 <p className="font-medium mb-2">{data.name}</p>
